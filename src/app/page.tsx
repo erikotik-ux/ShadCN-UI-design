@@ -95,7 +95,7 @@ export default function Home() {
             See all
           </Link>
         </div>
-        <ul className="divide-y divide-border rounded-lg">
+        <ul className="rounded-lg">
           {RECENT_TRANSACTIONS.map((tx) => (
             <li key={tx.id} className="flex items-center gap-4 px-4 py-3">
               <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-muted">
