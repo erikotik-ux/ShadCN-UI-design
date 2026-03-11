@@ -14,6 +14,7 @@ import {
   SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
+  SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -27,6 +28,9 @@ import {
 export function AppSidebar() {
   return (
     <Sidebar className="border-r border-sidebar-border">
+      <SidebarHeader className="px-4 py-5">
+        <span className="text-xl font-bold text-primary">WISE</span>
+      </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent>
