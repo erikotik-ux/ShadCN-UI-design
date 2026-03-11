@@ -12,6 +12,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { ChevronRight } from "lucide-react"
+import { DarkModeToggle } from "@/components/dark-mode-toggle"
 
 /**
  * DESIGNER NOTE: Wise-style top header
@@ -23,12 +24,9 @@ export function AppHeader() {
     <header className="mt-16 h-14 shrink-0 bg-background">
       <div className="mx-auto flex h-full w-full max-w-[976px] items-center gap-4 px-4">
       <SidebarTrigger className="-ml-1" />
-      {/* DESIGNER: Replace with your logo asset or SVG; Wise uses green "WISE" wordmark */}
+<div className="flex flex-1" />
       <div className="flex items-center gap-2">
-        <span className="text-xl font-bold text-primary">WISE</span>
-      </div>
-      <div className="flex flex-1" />
-      <div className="flex items-center gap-2">
+        <DarkModeToggle />
         <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
           Earn €90
         </Button>

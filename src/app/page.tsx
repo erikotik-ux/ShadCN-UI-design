@@ -14,6 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { ArrowUpCircle, PlusCircle, ChevronDown } from "lucide-react"
+import { TransferCalculator } from "@/components/transfer-calculator"
 
 /**
  * DESIGNER NOTE: Wise-style dashboard — layout and structure only.
@@ -45,8 +46,8 @@ export default function Home() {
       {/* Total balance + actions */}
       <section className="space-y-4">
         <div className="space-y-0">
-        <p className="text-sm font-medium text-muted-foreground">Total balance</p>
-        <h2 className="text-3xl font-bold tracking-tight">1.00 EUR</h2>
+          <p className="text-sm font-medium text-muted-foreground">Total balance</p>
+          <h2 className="text-3xl font-bold tracking-tight">1.00 EUR</h2>
         </div>
         <div className="flex flex-wrap gap-2">
           <Button size="sm" variant="default">
@@ -82,6 +83,11 @@ export default function Home() {
             </CardContent>
           </Card>
         ))}
+      </section>
+
+      {/* Transfer calculator */}
+      <section>
+        <TransferCalculator />
       </section>
 
       {/* Recent transactions */}
